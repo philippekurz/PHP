@@ -18,7 +18,7 @@
         public function setKm($km) {$this->_km = $km;}
         public function getKm() {return $this->_km;}
 
-        public function getAll() {return "$this->_marque $this->_modele $color - $this->_km km";}
+        public function getAll() {return "<br>$this->_marque <br>$this->_modele<br> $this->color<br>$this->_km km";}
     }
 
 ?>

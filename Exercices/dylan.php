@@ -55,18 +55,18 @@
     
     // Utilisation de la classe
     $maVoiture = new Voiture("Toyota", "Corolla", 2021);
-    echo "Marque: " . $maVoiture->getMarque() . "\n";
-    echo "Modèle: " . $maVoiture->getModele() . "\n";
-    echo "Année: " . $maVoiture->getAnnee() . "\n";
+    echo "Marque: " . $maVoiture->getMarque() . "<br>";
+    echo "Modèle: " . $maVoiture->getModele() . "<br>";
+    echo "Année: " . $maVoiture->getAnnee() . "<br>";
     
     // Modification des propriétés
     $maVoiture->setMarque("Honda");
     $maVoiture->setModele("Civic");
     $maVoiture->setAnnee(2022);
     
-    echo "Nouvelle marque: " . $maVoiture->getMarque() . "\n";
-    echo "Nouveau modèle: " . $maVoiture->getModele() . "\n";
-    echo "Nouvelle année: " . $maVoiture->getAnnee() . "\n";
+    echo "Nouvelle marque: " . $maVoiture->getMarque() . "<br>";
+    echo "Nouveau modèle: " . $maVoiture->getModele() . "<br>";
+    echo "Nouvelle année: " . $maVoiture->getAnnee() . "<br>";
   ?>
 
 </body>

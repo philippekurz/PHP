@@ -32,7 +32,7 @@
         }
 
         public function modeleComplet(){
-            return"$this->_marque $this->_modele $this->_km";
+            return"<br>$this->_marque <br>$this->_modele <br>$this->_km <br>$this->couleur";
         }
 
     }
@@ -49,7 +49,6 @@ $voiture1->setModele("Aygo");
 $voiture1->setKm("134 897 km ");
 $voiture1->couleur = "noire";
 echo $voiture1->modeleComplet();
-echo $voiture1->couleur;
 
 
 

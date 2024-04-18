@@ -5,6 +5,18 @@ class Voiture {
     private $_kms;
     public $couleur;
 
+    public function __construct($marque, $modele, $kms, $couleur) {
+        $this->_marque = $marque;
+        $this->_modele = $modele;
+        $this->_kms = $kms;
+        $this->couleur = $couleur;
+    }
+
+    // Opérations de nettoyage
+    public function __destruct() {
+        echo "__destruct";
+    }
+
     public function setMarque($marque) {
         $this->_marque = $marque;
     }
@@ -30,15 +42,15 @@ class Voiture {
     }
 
     public function toString() {
-        return "$this->_marque<br>$this->_modele<br>$this->couleur<br>$this->_kms"; 
+        return "<br>$this->_marque<br>$this->_modele<br>$this->couleur<br>$this->_kms"; 
     }
 }
 
 
-$voiture1 = new Voiture();
-$voiture1->setMarque("Renault");
-$voiture1->setModele("4L");
-$voiture1->setKms(623156);
-$voiture1->couleur = "Blanc";
+$voiture1 = new Voiture("Renault", "4L", 562314, "Blanc");
+// $voiture1->setMarque();
+// $voiture1->setModele("4L");
+// $voiture1->setKms(623156);
+// $voiture1->couleur = "Blanc";
 echo $voiture1->toString();
 ?>
